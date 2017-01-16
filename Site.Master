@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="martinhromek.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head id="Head1" runat="server">
+    <title>hromek.cz</title>
+    <link href="styles/myCSS.css" rel="stylesheet" type="text/css" />
+
+    <!-- slider gallery -->
+    <link href="styles/smoothDivScroll.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.smoothDivScroll-1.1-min.js"></script>
+
+    <%--spustim rozpoznani aktivniho odkazu--%>
+    <%--<script type="text/javascript" src="Scripts/activeLink.js"></script>
+    <script type="text/javascript">
+        window.onload = setActive;
+    </script>--%>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="Form1" runat="server">
+
+        <div id="container">
+
+            <%--H L A V I C K A--%>
+            <div id="hlavicka">
+                <a href="Default.aspx">
+                    <img src="pic/logo2.png" height="200" alt="personal photography"/>
+                </a>                
+            </div>
+
+            <%--B O D Y--%>
+            <div id="wrapper">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <%--P A T I C K A--%>
+            <div id="paticka" class="grayscale">
+                <ul>
+                    <li title="http://www.facebook.com/m4rwin"><a target="_blank" href="http://www.facebook.com/m4rwin"><figure><img src="pic/Facebook.png" height="25px" alt="facebook"/></figure></a></li>
+                    <li title="https://github.com/m4rwin"><a target="_blank" href="https://github.com/m4rwin"><figure><img src="pic/github.png" height="25px" alt="github"/></figure></a></li>
+                    <li title="My Library"><a href="library/Home.aspx"><figure><img src="pic/library.png" height="25px" alt="My Library"/></figure></a></li>
+                    <li title="hromek@hotmail.cz"><figure><img src="pic/Mail.png" height="25px" alt="hromek@hotmail.cz"/></figure></li>
+                    <li title="+420 775 65 60 55"><figure><img src="pic/Phone.png" height="25px" alt="+420 775 65 60 55"/></figure></li>
+                    <li><a href="cv\martin_hromek_cv_cz.pdf" target="_blank" title="curriculum vitae (cz), last update: 2016-07-21 23:05:00"><figure><img src="pic/Adobe.png" height="25px" alt="cv" /></figure></a></li>
+                    <li><a href="cv\martin_hromek_cv.pdf" target="_blank" title="curriculum vitae (en), last update: 2016-07-21 23:05:00"><figure><img src="pic/Adobe.png" height="25px" alt="cv" /></figure></a></li>
+                </ul>
+               
+            </div>
+            </div>
+    </form>
+</body>
+</html>
+

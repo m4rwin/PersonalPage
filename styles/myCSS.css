@@ -1,0 +1,136 @@
+﻿/* MY DIV
+----------------------------------------------------------*/
+div#container   { width: auto; height: 100vh; padding: 0px 0px 0px 0px;}
+div#wrapper     { width: 100%; height: auto; float:left; }
+div#hlavicka    { width: auto; height: auto; padding: 5px}
+div#paticka     { width: 100%; height: auto; clear:left; position: absolute; bottom: 0; } 
+
+
+div#obsah p{line-height:1.4}
+
+/* font */
+div#hlavicka    {  text-align:left; font-size:1.2em;}
+div#paticka     {  letter-spacing: 0.1em; margin: 0 auto;}
+
+
+/* color */
+body            { background: #222222; }
+div#container   { background: ; }
+div#wrapper     { background: ; }
+div#hlavicka    { background: ;  }
+div#paticka     { background: ;  color:White;}
+
+
+/* DEFAULTS
+----------------------------------------------------------*/
+html,body{margin:0;padding:0}
+
+html
+{
+    height: 100%; /* make sure it is at least as tall as the viewport */
+    position: relative;
+}
+
+body   
+{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+    font-family: MYgothic sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font: 76% MYgothic,sans-serif;
+}
+
+a:link, a:visited
+{
+    color: White;
+    text-decoration: none;
+}
+
+/*
+a{display:block;color: #981793;padding:10px;}
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+li {
+    float: left
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+li figure{
+    margin: 15px 10px 15px 10px;
+    padding: 0;
+}
+
+a:hover
+{
+    color: Gray;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #8e9092;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+h1
+{
+
+}
+
+h2
+{
+
+}
+
+h3
+{
+
+}
+
+h4
+{
+
+}
+
+h5, h6
+{
+    
+}
+
+
+
+
+/* Gray Scale Effect*/
+.grayscale figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.grayscale figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}

@@ -23,6 +23,7 @@ namespace martinhromek.library
     public int NoOfAntic { get; private set; }
     public Book MyOldestBook { get; set; }
     public Book OldestBook { get; set; }
+    public string BestPublishers { get; set; }
     #endregion
 
     #region Events
@@ -123,11 +124,13 @@ namespace martinhromek.library
       NoOfReaded();
       NoOfNewAntic();
       FindOldestBook();
+      FindBestPublishers();
 
       lblNoOfBooks.Text = $"{NumberOfBooks.ToString()} [n:{NoOfNew}, a:{NoOfAntic}]";
       lblReaded.Text = $"{NumberOfReaded} [{NumberOfReadedPercentage}%]";
       lblMyOldestBook.Text = $"{MyOldestBook.CzechName} [{MyOldestBook.MyPublicationDate}]";
       lblOldestBook.Text = $"{OldestBook.CzechName} [{OldestBook.OriginalPublicationDate}]";
+      lblBestPublishers.Text = BestPublishers;
     }
 
     private void NoOfBooks()
@@ -151,6 +154,24 @@ namespace martinhromek.library
     {
       MyOldestBook = Library.OrderBy((x) => (x.MyPublicationDate)).First();
       OldestBook = Library.OrderBy((x) => (x.OriginalPublicationDate)).First();
+    }
+
+    private void FindBestPublishers()
+    {
+      BestPublishers = string.Empty;
+      var result = Library.GroupBy(x => x.Publish3r).
+        Select(i => new
+        {
+          Name = i.Key,
+          Numero = i.ToList().Count
+        }).
+        OrderByDescending(y => y.Numero).Take(3);
+
+
+      foreach (var item in result)
+      {
+        BestPublishers += $"{item.Name}: {item.Numero}, ";
+      }
     }
     #endregion
   }

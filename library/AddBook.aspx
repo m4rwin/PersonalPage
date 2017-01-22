@@ -41,13 +41,13 @@
                         </asp:TableRow>
 
                         <asp:TableRow>
-                            <asp:TableCell>Originální název</asp:TableCell>
-                            <asp:TableCell ColumnSpan="2"><asp:TextBox ID="txbOriginalName" runat="server"></asp:TextBox></asp:TableCell>
+                            <asp:TableCell>Český název</asp:TableCell>
+                            <asp:TableCell ColumnSpan="2"><asp:TextBox ID="txbCzechName" runat="server"></asp:TextBox></asp:TableCell>
                         </asp:TableRow>
 
                         <asp:TableRow>
-                            <asp:TableCell>Český název</asp:TableCell>
-                            <asp:TableCell ColumnSpan="2"><asp:TextBox ID="txbCzechName" runat="server"></asp:TextBox></asp:TableCell>
+                            <asp:TableCell>Originální název</asp:TableCell>
+                            <asp:TableCell ColumnSpan="2"><asp:TextBox ID="txbOriginalName" runat="server"></asp:TextBox></asp:TableCell>
                         </asp:TableRow>
 
                         <asp:TableRow>

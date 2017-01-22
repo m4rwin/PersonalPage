@@ -26,7 +26,8 @@ namespace martinhromek.library
       Naucne = 6,
       IT = 7,
       Filozofie = 8,
-      Historie = 9
+      Historie = 9,
+      Dobrodruzne = 10
      }
 
     public enum BookType

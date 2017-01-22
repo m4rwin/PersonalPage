@@ -76,15 +76,6 @@ namespace martinhromek.library {
         protected global::System.Web.UI.WebControls.DropDownList ddAuthorCollection;
         
         /// <summary>
-        /// txbOriginalName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbOriginalName;
-        
-        /// <summary>
         /// txbCzechName control.
         /// </summary>
         /// <remarks>
@@ -92,6 +83,15 @@ namespace martinhromek.library {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txbCzechName;
+        
+        /// <summary>
+        /// txbOriginalName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbOriginalName;
         
         /// <summary>
         /// txbDatePublish control.

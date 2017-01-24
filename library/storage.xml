@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<books last_update="15.01.2017 17:48:24">
+<books last_update="24.01.2017 18:31:00">
   <book id="1" cover="">
     <name original="The Man in the Maze" czech="Muž v labyrintu" />
     <author>
@@ -1161,6 +1161,1088 @@
     </author>
     <publication_date original="2002" my="2004" />
     <publisher>Návrat</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="62" cover="">
+    <name original="The Door into Summer" czech="Dveře do léta" />
+    <author>
+      <first_name>Robert</first_name>
+      <middle_name>Anson</middle_name>
+      <last_name>Heinlein</last_name>
+    </author>
+    <publication_date original="1957" my="1995" />
+    <publisher>Laser</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="63" cover="">
+    <name original="West of Eden" czech="Na západ od ráje" />
+    <author>
+      <first_name>Harry</first_name>
+      <middle_name></middle_name>
+      <last_name>Harrison</last_name>
+    </author>
+    <publication_date original="1984" my="1995" />
+    <publisher>Laser</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="64" cover="">
+    <name original="Adulthood Rites" czech="Xenogenesis 2: Rituály dospělosti" />
+    <author>
+      <first_name>Octavia</first_name>
+      <middle_name>Estelle</middle_name>
+      <last_name>Butlerová</last_name>
+    </author>
+    <publication_date original="1989" my="1998" />
+    <publisher>Polaris</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="65" cover="">
+    <name original="Imago" czech="Xenogenesis 3: Imago" />
+    <author>
+      <first_name>Octavia</first_name>
+      <middle_name>Estelle</middle_name>
+      <last_name>Butlerová</last_name>
+    </author>
+    <publication_date original="1989" my="2000" />
+    <publisher>Polaris</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="66" cover="">
+    <name original="Janissaries" czech="Janičáři" />
+    <author>
+      <first_name>Jerry</first_name>
+      <middle_name></middle_name>
+      <last_name>Pournelle</last_name>
+    </author>
+    <publication_date original="1979" my="1997" />
+    <publisher>Poutník</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="67" cover="">
+    <name original="Nana" czech="Nana" />
+    <author>
+      <first_name>Émile</first_name>
+      <middle_name></middle_name>
+      <last_name>Zola</last_name>
+    </author>
+    <publication_date original="1880" my="1965" />
+    <publisher>Klub čtenářů</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Historie</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="68" cover="">
+    <name original="L'Ile de Pingouins" czech="Ostrov tučňáků" />
+    <author>
+      <first_name>Anatole</first_name>
+      <middle_name></middle_name>
+      <last_name>France</last_name>
+    </author>
+    <publication_date original="1908" my="1978" />
+    <publisher>Svoboda</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+      <b>Fantasy</b>
+      <c>Humor</c>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="69" cover="">
+    <name original="Java: Hotová řešení" czech="Java: Hotová řešení" />
+    <author>
+      <first_name>Lubomír</first_name>
+      <middle_name></middle_name>
+      <last_name>Brůha</last_name>
+    </author>
+    <publication_date original="2003" my="2003" />
+    <publisher>Computer Press</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>IT</a>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="70" cover="">
+    <name original="Vom Abakus zum Internet" czech="Dějiny Informatiky: od Abaku k internetu" />
+    <author>
+      <first_name>Friedrich</first_name>
+      <middle_name></middle_name>
+      <last_name>Naumann</last_name>
+    </author>
+    <publication_date original="2009" my="2009" />
+    <publisher>Galileo</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="71" cover="">
+    <name original="Java a XML" czech="Java a XML" />
+    <author>
+      <first_name>Pavel</first_name>
+      <middle_name></middle_name>
+      <last_name>Herout</last_name>
+    </author>
+    <publication_date original="2007" my="2007" />
+    <publisher>Kopp</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="72" cover="">
+    <name original="Java: Bohatství knihoven" czech="Java: Bohatství knihoven" />
+    <author>
+      <first_name>Pavel</first_name>
+      <middle_name></middle_name>
+      <last_name>Herout</last_name>
+    </author>
+    <publication_date original="2006" my="2006" />
+    <publisher>Kopp</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="73" cover="">
+    <name original="Burning Daylight" czech="Bílý den" />
+    <author>
+      <first_name>Jack</first_name>
+      <middle_name></middle_name>
+      <last_name>London</last_name>
+    </author>
+    <publication_date original="1974" my="1978" />
+    <publisher>Mladá Fronta</publisher>
+    <type>Antikvariat</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="74" cover="">
+    <name original="The Time Hoppers" czech="Skokani v čase" />
+    <author>
+      <first_name>Robert</first_name>
+      <middle_name></middle_name>
+      <last_name>Silverberg</last_name>
+    </author>
+    <publication_date original="1974" my="1996" />
+    <publisher>Nakladatelství Železný</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="75" cover="">
+    <name original="The Big Bang Theory and Philosophy" czech="Teorie velkého třesku a filozofie" />
+    <author>
+      <first_name>Irwin</first_name>
+      <middle_name></middle_name>
+      <last_name>William</last_name>
+    </author>
+    <publication_date original="2012" my="2016" />
+    <publisher>Xyz</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Naucne</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="76" cover="">
+    <name original="Party Time" czech="Čas strany" />
+    <author>
+      <first_name>Rowan</first_name>
+      <middle_name></middle_name>
+      <last_name>Callick</last_name>
+    </author>
+    <publication_date original="2013" my="2015" />
+    <publisher>Mladá Fronta</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Naucne</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="77" cover="">
+    <name original="Rupert Murdoch: An Investigation of Political Power" czech="Rupert Murdoch: Profil politické moci" />
+    <author>
+      <first_name>David</first_name>
+      <middle_name></middle_name>
+      <last_name>McKnight</last_name>
+    </author>
+    <publication_date original="2012" my="2012" />
+    <publisher>Mladá Fronta</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Naucne</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="78" cover="">
+    <name original="Die Welt des Spielers" czech="Magira: Hráčův svět" />
+    <author>
+      <first_name>Hugh</first_name>
+      <middle_name></middle_name>
+      <last_name>Walker</last_name>
+    </author>
+    <publication_date original="1995" my="1995" />
+    <publisher>Nakladatelství Železný</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Fantasy</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="79" cover="">
+    <name original="The Hour of Dragon" czech="Hodina draka" />
+    <author>
+      <first_name>Robert</first_name>
+      <middle_name>Erwin</middle_name>
+      <last_name>Howard</last_name>
+    </author>
+    <publication_date original="1935" my="1997" />
+    <publisher>Poutník</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Fantasy</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="80" cover="">
+    <name original="True Love" czech="Opravdová láska" />
+    <author>
+      <first_name>Robert</first_name>
+      <middle_name></middle_name>
+      <last_name>Fulghum</last_name>
+    </author>
+    <publication_date original="1997" my="2009" />
+    <publisher>Argo</publisher>
+    <type>Nova</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="81" cover="">
+    <name original="Dualists" czech="Tajemný sligum" />
+    <author>
+      <first_name>Stephen</first_name>
+      <middle_name></middle_name>
+      <last_name>Bowkett</last_name>
+    </author>
+    <publication_date original="1987" my="1993" />
+    <publisher>Svoboda</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="82" cover="">
+    <name original="Einsteinovo řešení světa bez válek" czech="Einsteinovo řešení světa bez válek" />
+    <author>
+      <first_name>Jiří</first_name>
+      <middle_name></middle_name>
+      <last_name>Vančura</last_name>
+    </author>
+    <publication_date original="2001" my="2001" />
+    <publisher>Doplňek</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Ostatni</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="83" cover="">
+    <name original="La Romana" czech="Římanka" />
+    <author>
+      <first_name>Alberto</first_name>
+      <middle_name></middle_name>
+      <last_name>Moravia</last_name>
+    </author>
+    <publication_date original="1966" my="2009" />
+    <publisher>Academia</publisher>
+    <type>Nova</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="84" cover="">
+    <name original="Cosmopolis" czech="Cosmopolis" />
+    <author>
+      <first_name>Don</first_name>
+      <middle_name></middle_name>
+      <last_name>Delillo</last_name>
+    </author>
+    <publication_date original="2004" my="2012" />
+    <publisher>Odeon</publisher>
+    <type>Nova</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="85" cover="">
+    <name original="The Godfather" czech="Kmotr" />
+    <author>
+      <first_name>Mario</first_name>
+      <middle_name></middle_name>
+      <last_name>Puzo</last_name>
+    </author>
+    <publication_date original="1969" my="1974" />
+    <publisher>Rudé Právo</publisher>
+    <type>Antikvariat</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="86" cover="">
+    <name original="The Gods Themselves" czech="Ani sami bohové" />
+    <author>
+      <first_name>Issac</first_name>
+      <middle_name></middle_name>
+      <last_name>Asimov</last_name>
+    </author>
+    <publication_date original="1972" my="1992" />
+    <publisher>Svoboda</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="87" cover="">
+    <name original="The Martian Chronicles" czech="Marťanská kronika 451° Fahrenheita" />
+    <author>
+      <first_name>Ray</first_name>
+      <middle_name></middle_name>
+      <last_name>Bradbury</last_name>
+    </author>
+    <publication_date original="1958" my="1978" />
+    <publisher>Odeon</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="88" cover="">
+    <name original="The Second Foundation Trilogy: Foundation`s Triumph" czech="Vítězství Nadace" />
+    <author>
+      <first_name>David</first_name>
+      <middle_name></middle_name>
+      <last_name>Brin</last_name>
+    </author>
+    <publication_date original="1999" my="2003" />
+    <publisher>Návrat</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="89" cover="">
+    <name original="Conan a nesmrtelný" czech="Conan a nesmrtelný" />
+    <author>
+      <first_name>Richard</first_name>
+      <middle_name>D.</middle_name>
+      <last_name>Evans</last_name>
+    </author>
+    <publication_date original="1996" my="1996" />
+    <publisher>Poutník</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="90" cover="">
+    <name original="The Best of Harry Harrison" czech="Zpátky na Zemi" />
+    <author>
+      <first_name>Harry</first_name>
+      <middle_name></middle_name>
+      <last_name>Harrison</last_name>
+    </author>
+    <publication_date original="1996" my="1996" />
+    <publisher>AFSF</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="91" cover="">
+    <name original="Stíny noci" czech="Stíny noci" />
+    <author>
+      <first_name>Robert</first_name>
+      <middle_name></middle_name>
+      <last_name>Silverberg</last_name>
+    </author>
+    <publication_date original="1993" my="1993" />
+    <publisher>SLAN</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="92" cover="">
+    <name original="The Long War" czech="Dlouhá válka" />
+    <author>
+      <first_name>Terry</first_name>
+      <middle_name></middle_name>
+      <last_name>Pratchett</last_name>
+    </author>
+    <publication_date original="2013" my="2014" />
+    <publisher>Talpress</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Scifi</a>
+      <b>Fantasy</b>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="93" cover="">
+    <name original="Guards! Guards!" czech="Stráže! Stráže!" />
+    <author>
+      <first_name>Terry</first_name>
+      <middle_name></middle_name>
+      <last_name>Pratchett</last_name>
+    </author>
+    <publication_date original="1989" my="2007" />
+    <publisher>Talpress</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Scifi</a>
+      <b>Fantasy</b>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="94" cover="">
+    <name original="Pyramids" czech="Pyramidy" />
+    <author>
+      <first_name>Terry</first_name>
+      <middle_name></middle_name>
+      <last_name>Pratchett</last_name>
+    </author>
+    <publication_date original="1989" my="2007" />
+    <publisher>Talpress</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Scifi</a>
+      <b>Fantasy</b>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="95" cover="">
+    <name original="Total Recall: My Unbelievably True Life Story" czech="Total Recall: Můj neuvěřitelný životní příběh" />
+    <author>
+      <first_name>Arnold</first_name>
+      <middle_name></middle_name>
+      <last_name>Schwarzenegger</last_name>
+    </author>
+    <publication_date original="2012" my="2013" />
+    <publisher>Xyz</publisher>
+    <type>Nova</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="96" cover="">
+    <name original="Photoshop 7" czech="Photoshop 7" />
+    <author>
+      <first_name>Michael</first_name>
+      <middle_name></middle_name>
+      <last_name>Baumgardt</last_name>
+    </author>
+    <publication_date original="2002" my="2003" />
+    <publisher>Computer Press</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="97" cover="">
+    <name original="Down &amp; Dirty Tricks" czech="Kniha plná triků" />
+    <author>
+      <first_name>Scott</first_name>
+      <middle_name></middle_name>
+      <last_name>Kelby</last_name>
+    </author>
+    <publication_date original="2009" my="2009" />
+    <publisher>Computer Press</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="98" cover="">
+    <name original="1001 tipů a triků pro C#" czech="1001 tipů a triků pro C#" />
+    <author>
+      <first_name>Amadeo</first_name>
+      <middle_name></middle_name>
+      <last_name>Mareš</last_name>
+    </author>
+    <publication_date original="2011" my="2011" />
+    <publisher>Computer Press</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="99" cover="">
+    <name original="Classic Effects" czech="Osvědčené efekty ve Photoshopu" />
+    <author>
+      <first_name>Scott</first_name>
+      <middle_name></middle_name>
+      <last_name>Kelby</last_name>
+    </author>
+    <publication_date original="2004" my="2006" />
+    <publisher>Computer Press</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="100" cover="">
+    <name original="Programovací jazyk C++ pro zelenáče" czech="Programovací jazyk C++ pro zelenáče" />
+    <author>
+      <first_name>Petr</first_name>
+      <middle_name></middle_name>
+      <last_name>Šalamoun</last_name>
+    </author>
+    <publication_date original="2005" my="2005" />
+    <publisher>Neocortex</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="101" cover="">
+    <name original="Genetické algoritmy a genetické programování" czech="Genetické algoritmy a genetické programování" />
+    <author>
+      <first_name>Josef</first_name>
+      <middle_name></middle_name>
+      <last_name>Hynek</last_name>
+    </author>
+    <publication_date original="2008" my="2008" />
+    <publisher>Grada</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Naucne</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="102" cover="">
+    <name original="Absolute Beginner`s Guide to Networking" czech="Počítačové sítě" />
+    <author>
+      <first_name>Joe</first_name>
+      <middle_name></middle_name>
+      <last_name>Habraken</last_name>
+    </author>
+    <publication_date original="2004" my="2006" />
+    <publisher>Grada</publisher>
+    <type>Nova</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="103" cover="">
+    <name original="Deception Point" czech="Anatomie lži" />
+    <author>
+      <first_name>Dan</first_name>
+      <middle_name></middle_name>
+      <last_name>Brown</last_name>
+    </author>
+    <publication_date original="2001" my="2008" />
+    <publisher>Argo</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Krimi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="104" cover="">
+    <name original="Angels &amp; Demons" czech="Andělé a démoni" />
+    <author>
+      <first_name>Dan</first_name>
+      <middle_name></middle_name>
+      <last_name>Brown</last_name>
+    </author>
+    <publication_date original="2000" my="2009" />
+    <publisher>Argo</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Krimi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="105" cover="">
+    <name original="Man som hatar kvinnor" czech="Muží, kteří nenávidí ženy" />
+    <author>
+      <first_name>Stieg</first_name>
+      <middle_name></middle_name>
+      <last_name>Larsson</last_name>
+    </author>
+    <publication_date original="2005" my="2008" />
+    <publisher>Host</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Krimi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="106" cover="">
+    <name original="Disaster survival guide" czech="Průvodce přežití" />
+    <author>
+      <first_name>Rich</first_name>
+      <middle_name></middle_name>
+      <last_name>Johnson</last_name>
+    </author>
+    <publication_date original="2012" my="2013" />
+    <publisher>Svojtka</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="107" cover="">
+    <name original="Mikropočítačová revoluce" czech="Mikropočítačová revoluce" />
+    <author>
+      <first_name>Pavel</first_name>
+      <middle_name></middle_name>
+      <last_name>Tronner</last_name>
+    </author>
+    <publication_date original="2014" my="2014" />
+    <publisher>Dokořán</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+      <b>IT</b>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="108" cover="">
+    <name original="World War Z: An oral history of the zombie war" czech="Světová válka Z: Historie světové války se zombie" />
+    <author>
+      <first_name>Max</first_name>
+      <middle_name></middle_name>
+      <last_name>Brooks</last_name>
+    </author>
+    <publication_date original="2006" my="2010" />
+    <publisher>Zoner Press</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Horor</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings>Výborná četba</ratings>
+    <ratings_value>85</ratings_value>
+  </book>
+  <book id="109" cover="">
+    <name original="Osobní trenér" czech="Osobní trenér" />
+    <author>
+      <first_name>Petr</first_name>
+      <middle_name></middle_name>
+      <last_name>Osten</last_name>
+    </author>
+    <publication_date original="2005" my="2005" />
+    <publisher>Grada</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Ostatni</group>
+    <readed>ano</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="110" cover="">
+    <name original="Myšlenky o vychování" czech="Myšlenky o vychování" />
+    <author>
+      <first_name>John</first_name>
+      <middle_name></middle_name>
+      <last_name>Locke</last_name>
+    </author>
+    <publication_date original="1906" my="1906" />
+    <publisher>Dědictví Komenského</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Naucne</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="111" cover="">
+    <name original="The Adventures of Tom Sawyer" czech="Dobrodružství Toma Sawyera" />
+    <author>
+      <first_name>Mark</first_name>
+      <middle_name></middle_name>
+      <last_name>Twain</last_name>
+    </author>
+    <publication_date original="1903" my="1989" />
+    <publisher>Albatros</publisher>
+    <type>Antikvariat</type>
+    <genre />
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="112" cover="">
+    <name original="Za siedmimi divmi sveta" czech="Za sedmi divy světa" />
+    <author>
+      <first_name>Vojtěch</first_name>
+      <middle_name></middle_name>
+      <last_name>Zamarovský</last_name>
+    </author>
+    <publication_date original="1972" my="1972" />
+    <publisher>Albatros</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Naucne</a>
+    </genre>
+    <group>Naucne</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="113" cover="">
+    <name original="Deathworld 5: Deathworld vs. Filibusters" czech="Pátá planeta smrti: Peklo pirátů" />
+    <author>
+      <first_name>Harry</first_name>
+      <middle_name></middle_name>
+      <last_name>Harrison</last_name>
+    </author>
+    <publication_date original="1998" my="2005" />
+    <publisher>Fantom Print</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="114" cover="">
+    <name original="Deathworld 5: Pirates Heaven" czech="Pátá planeta smrti: Ráj pirátů" />
+    <author>
+      <first_name>Harry</first_name>
+      <middle_name></middle_name>
+      <last_name>Harrison</last_name>
+    </author>
+    <publication_date original="1998" my="2005" />
+    <publisher>Fantom Print</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="115" cover="">
+    <name original="Special Deliverance" czech="Zvláštní mise" />
+    <author>
+      <first_name>Clifford</first_name>
+      <middle_name>Donald</middle_name>
+      <last_name>Simak</last_name>
+    </author>
+    <publication_date original="1982" my="2005" />
+    <publisher>Triton</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="116" cover="">
+    <name original="Hammered" czech="Zakalená" />
+    <author>
+      <first_name>Elizabeth</first_name>
+      <middle_name></middle_name>
+      <last_name>Bearová</last_name>
+    </author>
+    <publication_date original="2005" my="2009" />
+    <publisher>Laser</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="117" cover="">
+    <name original="Pashazade: The First Arabesk" czech="Pašazád" />
+    <author>
+      <first_name>Jon</first_name>
+      <middle_name>Courtenay</middle_name>
+      <last_name>Grimwood</last_name>
+    </author>
+    <publication_date original="2001" my="2009" />
+    <publisher>Laser</publisher>
+    <type>Antikvariat</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="118" cover="">
+    <name original="Mlok" czech="Mlok" />
+    <author>
+      <first_name>Jiřína</first_name>
+      <middle_name></middle_name>
+      <last_name>Vorlová</last_name>
+    </author>
+    <publication_date original="2009" my="2009" />
+    <publisher>Nová vlna</publisher>
     <type>Antikvariat</type>
     <genre>
       <a>Scifi</a>

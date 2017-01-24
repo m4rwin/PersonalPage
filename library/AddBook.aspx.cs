@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -23,6 +24,12 @@ namespace martinhromek.library
 
       if (!IsPostBack)
         LoadData();
+    }
+
+    protected void btnFind_Click(object sender, EventArgs e)
+    {
+      var b = Lib.Where( i => i.CzechName.Contains(txbFindByName.Text)).FirstOrDefault();
+      FillData(b);
     }
 
     protected void btnSave_Click(object sender, EventArgs e)
@@ -118,9 +125,7 @@ namespace martinhromek.library
     private void SaveItem()
     {
       XDocument doc = XDocument.Load(DBPath);
-
       doc.Element("books").SetAttributeValue("last_update", DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss"));
-
       XElement books = doc.Element("books");
 
       int id = (books.HasElements) ? Convert.ToInt32(books?.Elements()?.Last().Attribute("id").Value) : 0;
@@ -128,7 +133,7 @@ namespace martinhromek.library
       books.Add(
           new XElement("book",
               new XAttribute("id", (++id).ToString()),
-              new XAttribute("cover", fileCover.FileName),
+              new XAttribute("cover", string.Empty),
           new XElement("name",
               new XAttribute("original", txbOriginalName.Text),
               new XAttribute("czech", txbCzechName.Text)),
@@ -160,6 +165,37 @@ namespace martinhromek.library
         if (item.Selected)
           result.Add(new XElement((ch++).ToString(), item.Text));
       return result;
+    }
+
+    private void FillData(Book book)
+    {
+      if (book == null)
+      {
+        lblInfo.Text = "Kniha nenalezena";
+        lblInfo.ForeColor = System.Drawing.Color.DarkRed;
+        Response.AppendHeader("Refresh", "2");
+        return;
+      }
+      txbFirstName.Text = book.AuthorFirstName;
+      txbMiddleName.Text = book.AuthorMiddleName;
+      txbLastName.Text = book.AuthorLastName;
+      txbCzechName.Text = book.CzechName;
+      txbOriginalName.Text = book.OriginalName;
+      txbDatePublish.Text = book.OriginalPublicationDate;
+      txbDatePublishMy.Text = book.MyPublicationDate;
+      txbPublisher.Text = book.Publish3r;
+      ddType.SelectedValue = book.BookType;
+
+      foreach (ListItem item in lbGenre.Items)
+        if (book.Genre.Contains(item.Text))
+          item.Selected = true;
+
+      ddGroup.SelectedValue = book.Groupe.ToString();
+      ddReaded.SelectedValue = book.Readed ? "ano" : "ne";
+
+      txbDateRead.Text = book.DateRead;
+      txbRating.Text = book.Ratings;
+      txbRatingValue.Text = book.RatingsValue;
     }
     #endregion
   }

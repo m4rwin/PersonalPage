@@ -104,7 +104,8 @@ namespace martinhromek.library
 
     private void ShowBook(System.Web.UI.Control panel, Book item, bool lang)
     {
-      string tooltip = $"{item.AuthorFirstName} {item.AuthorMiddleName} {item.AuthorLastName}, {item.OriginalName}, {item.CzechName}, {item.OriginalPublicationDate} ({item.MyPublicationDate}), {item.Publish3r}, {item.BookType}, [{item.GenreAll}], [{item.Groupe}], přečteno: {(item.Readed)}, {item.DateRead}, [{item.Ratings} : {item.RatingsValue}%]";
+      string readedText = item.Readed ? $"přečteno: {item.DateRead} - {item.Ratings} [{item.RatingsValue}%]" : "nepřečteno";
+      string tooltip = $"{item.AuthorFirstName} {item.AuthorMiddleName} {item.AuthorLastName} - {item.OriginalName} ({item.OriginalPublicationDate}), {item.CzechName} ({item.MyPublicationDate}), {item.Publish3r}, {item.BookType}, [{item.GenreAll}], [{item.Groupe}], {readedText}";
       string bookName = (lang) ? item.CzechName : item.OriginalName;
 
       panel.Controls.Add(new Label()
@@ -130,7 +131,7 @@ namespace martinhromek.library
       lblReaded.Text = $"{NumberOfReaded} [{NumberOfReadedPercentage}%]";
       lblMyOldestBook.Text = $"{MyOldestBook.CzechName} [{MyOldestBook.MyPublicationDate}]";
       lblOldestBook.Text = $"{OldestBook.CzechName} [{OldestBook.OriginalPublicationDate}]";
-      lblBestPublishers.Text = BestPublishers;
+      lblBestPublishers.Text = $"[{BestPublishers.Substring(0, BestPublishers.Length-2)}]";
     }
 
     private void NoOfBooks()
@@ -165,7 +166,7 @@ namespace martinhromek.library
           Name = i.Key,
           Numero = i.ToList().Count
         }).
-        OrderByDescending(y => y.Numero).Take(3);
+        OrderByDescending(y => y.Numero).Take(5);
 
 
       foreach (var item in result)

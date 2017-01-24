@@ -25,7 +25,7 @@
                         <asp:TableCell HorizontalAlign="Left">
                             Knih: <asp:Label runat="server" ID="lblNoOfBooks" Text="-"/> |
                             Přečteno: <asp:Label runat="server" ID="lblReaded" Text="-" /> |
-                            Nakladatelé <asp:Label runat="server" ID="lblBestPublishers" Text="-" />
+                            Nakladatelé: <asp:Label runat="server" ID="lblBestPublishers" Text="-" />
                         </asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>

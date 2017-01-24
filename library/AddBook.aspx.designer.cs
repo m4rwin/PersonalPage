@@ -40,6 +40,24 @@ namespace martinhromek.library {
         protected global::System.Web.UI.WebControls.Table Table1;
         
         /// <summary>
+        /// txbFindByName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbFindByName;
+        
+        /// <summary>
+        /// btnFind control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFind;
+        
+        /// <summary>
         /// txbFirstName control.
         /// </summary>
         /// <remarks>
@@ -191,15 +209,6 @@ namespace martinhromek.library {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txbRatingValue;
-        
-        /// <summary>
-        /// fileCover control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileCover;
         
         /// <summary>
         /// lblInfo control.

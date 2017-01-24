@@ -28,6 +28,16 @@
                 <asp:Table ID="Table1" runat="server" BorderStyle="Solid" BorderWidth="0" GridLines="None">
                     
                         <asp:TableRow>
+                            <asp:TableCell ColumnSpan="2">
+                                <asp:TextBox runat="server" ID="txbFindByName" Width="350" Enabled="false"></asp:TextBox>
+                            </asp:TableCell>
+
+                            <asp:TableCell HorizontalAlign="Right">
+                                <asp:Button runat="server" ID="btnFind" Text="Hledat" OnClick="btnFind_Click" Enabled="false"/>
+                            </asp:TableCell>
+                        </asp:TableRow>    
+
+                        <asp:TableRow>
                             <asp:TableCell>Autor</asp:TableCell>
                             <asp:TableCell>
                                 <asp:TextBox ID="txbFirstName" runat="server" ToolTip="First Name" Width="100" />
@@ -35,8 +45,8 @@
                                 <asp:TextBox ID="txbLastName" runat="server" ToolTip="Last Name" Width="100" />
                             </asp:TableCell>
                         
-                            <asp:TableCell>
-                                <asp:DropDownList ID="ddAuthorCollection" runat="server" OnSelectedIndexChanged="ddAuthorCoolection_SelectedIndexChanged" AutoPostBack="true" Width="150" />
+                            <asp:TableCell HorizontalAlign="Right">
+                                <asp:DropDownList ID="ddAuthorCollection" runat="server" OnSelectedIndexChanged="ddAuthorCoolection_SelectedIndexChanged" AutoPostBack="true" Width="200" />
                             </asp:TableCell>
                         </asp:TableRow>
 
@@ -63,7 +73,7 @@
                         <asp:TableRow>
                             <asp:TableCell>Vydavatel</asp:TableCell>
                             <asp:TableCell><asp:TextBox ID="txbPublisher" runat="server"></asp:TextBox></asp:TableCell>
-                            <asp:TableCell><asp:DropDownList ID="ddPublisherCollection" runat="server" OnSelectedIndexChanged="ddPublisherCollection_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList></asp:TableCell>
+                            <asp:TableCell><asp:DropDownList ID="ddPublisherCollection" runat="server" OnSelectedIndexChanged="ddPublisherCollection_SelectedIndexChanged" AutoPostBack="true"  Width="200"></asp:DropDownList></asp:TableCell>
                         </asp:TableRow>
 
                         <asp:TableRow>
@@ -105,12 +115,6 @@
                         </asp:TableRow>
 
                     <asp:TableRow></asp:TableRow>
-
-                        <asp:TableRow>
-                            <asp:TableCell>Obálka</asp:TableCell>
-                            <asp:TableCell ColumnSpan="2"><asp:FileUpload ID="fileCover" runat="server"></asp:FileUpload></asp:TableCell>
-                        </asp:TableRow>
-
 
                     
                         <asp:TableRow>

@@ -6,6 +6,7 @@ using System.Xml;
 using System.Linq;
 using System.IO;
 using System.Xml.Linq;
+using BaseLibrary;
 
 namespace martinhromek.library
 {
@@ -36,9 +37,8 @@ namespace martinhromek.library
         SetStatistics();
         ShowData();
       }
-      catch (Exception ex)
+      catch (Exception)
       {
-        ;
       }
     }
 

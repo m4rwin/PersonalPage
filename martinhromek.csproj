@@ -130,8 +130,6 @@
     <Compile Include="library\AddBook.aspx.designer.cs">
       <DependentUpon>AddBook.aspx</DependentUpon>
     </Compile>
-    <Compile Include="library\Book.cs" />
-    <Compile Include="library\Common.cs" />
     <Compile Include="library\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,7 +156,12 @@
   <ItemGroup>
     <Content Include="Site.Master" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj">
+      <Project>{bea0b90d-d8ab-405f-8fdb-6c2b3e1e88ad}</Project>
+      <Name>BaseLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

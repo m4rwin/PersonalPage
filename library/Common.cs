@@ -12,7 +12,8 @@ namespace martinhromek.library
       Beletrie = 0,
       Naucne = 2,
       Serie = 3,
-      Ostatni = 4
+      Ostatni = 4,
+      Chci = 5
     }
 
     public enum BookGenre
@@ -27,7 +28,8 @@ namespace martinhromek.library
       IT = 7,
       Filozofie = 8,
       Historie = 9,
-      Dobrodruzne = 10
+      Dobrodruzne = 10,
+      Erotika = 11
      }
 
     public enum BookType

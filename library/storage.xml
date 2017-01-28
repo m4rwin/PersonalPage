@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<books last_update="24.01.2017 18:31:00">
+<books last_update="28.01.2017 16:23:11">
   <book id="1" cover="">
     <name original="The Man in the Maze" czech="Muž v labyrintu" />
     <author>
@@ -1013,25 +1013,6 @@
       <a>Scifi</a>
     </genre>
     <group>Serie</group>
-    <readed>ne</readed>
-    <date_read></date_read>
-    <ratings></ratings>
-    <ratings_value></ratings_value>
-  </book>
-  <book id="54" cover="">
-    <name original="The Martian Chronicles" czech="Marťanská kronika 451° Fahrenheita" />
-    <author>
-      <first_name>Ray</first_name>
-      <middle_name></middle_name>
-      <last_name>Bradbury</last_name>
-    </author>
-    <publication_date original="1958" my="1978" />
-    <publisher>Odeon</publisher>
-    <type>Antikvariat</type>
-    <genre>
-      <a>Scifi</a>
-    </genre>
-    <group>Beletrie</group>
     <readed>ne</readed>
     <date_read></date_read>
     <ratings></ratings>
@@ -2248,6 +2229,44 @@
       <a>Scifi</a>
     </genre>
     <group>Beletrie</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="119" cover="">
+    <name original="Sex ve zvěrokruhu" czech="Sex ve zvěrokruhu" />
+    <author>
+      <first_name>Richard</first_name>
+      <middle_name></middle_name>
+      <last_name>Knot</last_name>
+    </author>
+    <publication_date original="2016" my="2016" />
+    <publisher>Epocha</publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Erotika</a>
+    </genre>
+    <group>Chci</group>
+    <readed>ne</readed>
+    <date_read></date_read>
+    <ratings></ratings>
+    <ratings_value></ratings_value>
+  </book>
+  <book id="120" cover="">
+    <name original="Kodex Apokalypsy" czech="Codex Apocalypse " />
+    <author>
+      <first_name>Luis</first_name>
+      <middle_name></middle_name>
+      <last_name>Royo</last_name>
+    </author>
+    <publication_date original="2012" my="" />
+    <publisher></publisher>
+    <type>Nova</type>
+    <genre>
+      <a>Scifi</a>
+    </genre>
+    <group>Chci</group>
     <readed>ne</readed>
     <date_read></date_read>
     <ratings></ratings>

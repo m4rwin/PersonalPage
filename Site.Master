@@ -42,13 +42,13 @@
             <%--P A T I C K A--%>
             <div id="paticka" class="grayscale">
                 <ul>
-                    <li title="facebook"><a target="_blank" href="http://www.facebook.com/m4rwin"><figure><img src="pic/facebook.png" alt="facebook"/></figure></a></li>
-                    <li title="linkedin"><a target="_blank" href="https://www.linkedin.com/in/martin-hromek-90b5185a?trk=nav_responsive_tab_profile_pic"><figure><img src="pic/linkedin.png" alt="facebook"/></figure></a></li>
-                    <li title="github"><a target="_blank" href="https://github.com/m4rwin"><figure><img src="pic/github.png" alt="github"/></figure></a></li>
-                    <li title="email"><figure><img src="pic/mail.png" alt="hromek@hotmail.cz"/></figure></li>
-                    <li title="My Library"><a href="library/Home.aspx"><figure><img src="pic/library.png" alt="My Library"/></figure></a></li>                    
-                    <li><a href="cscz" target="_blank" title="curriculum vitae (cz), last update: 2016-07-21 23:05:00"><figure><img src="pic/adobe.png" alt="cv" /></figure></a></li>
-                    <li><a href="cv" target="_blank" title="curriculum vitae (en), last update: 2016-07-21 23:05:00"><figure><img src="pic/adobe.png" alt="cv" /></figure></a></li>
+                    <li title="facebook"><a target="_blank" href="http://www.facebook.com/m4rwin"><figure><img src="pic/facebook.png" height="30px" alt="facebook"/></figure></a></li>
+                    <li title="linkedin"><a target="_blank" href="https://www.linkedin.com/in/martin-hromek-90b5185a?trk=nav_responsive_tab_profile_pic"><figure><img src="pic/linkedin.png" height="30px" alt="facebook"/></figure></a></li>
+                    <li title="github"><a target="_blank" href="https://github.com/m4rwin"><figure><img src="pic/github.png" height="30px" alt="github"/></figure></a></li>
+                    <li title="email"><figure><img src="pic/mail.png" height="30px" alt="hromek@hotmail.cz"/></figure></li>
+                    <li title="My Library"><a href="library/Home.aspx"><figure><img src="pic/library.png" height="30px" alt="My Library"/></figure></a></li>                    
+                    <li><a href="cscz" target="_blank" title="curriculum vitae (cz), last update: 2016-07-21 23:05:00"><figure><img src="pic/adobe.png" height="30px" alt="cv" /></figure></a></li>
+                    <li><a href="cv" target="_blank" title="curriculum vitae (en), last update: 2016-07-21 23:05:00"><figure><img src="pic/adobe.png" height="30px" alt="cv" /></figure></a></li>
                 </ul>
                
             </div>

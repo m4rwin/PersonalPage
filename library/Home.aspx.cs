@@ -21,6 +21,7 @@ namespace martinhromek.library
     public double NumberOfReadedPercentage { get; private set; }
     public int NoOfNew { get; private set; }
     public int NoOfAntic { get; private set; }
+    public int NumberOfWantedBooks { get; set; }
     public Book MyOldestBook { get; set; }
     public Book OldestBook { get; set; }
     public string BestPublishers { get; set; }
@@ -121,46 +122,56 @@ namespace martinhromek.library
 
     private void SetStatistics()
     {
-      NoOfBooks();
-      NoOfReaded();
-      NoOfNewAntic();
-      FindOldestBook();
-      FindBestPublishers();
+      // pro statistiky pouzit knihy, ktere vlastnim
+      IEnumerable<Book> lib = Library.Where(i => i.Groupe != Common.BookGroup.Chci);
+
+      NoOfBooks(lib);
+      NoOfReaded(lib);
+      NoOfWantedBooks();
+      NoOfNewAntic(lib);
+      FindOldestBook(lib);
+      FindBestPublishers(lib);
 
       lblNoOfBooks.Text = $"{NumberOfBooks.ToString()} [n:{NoOfNew}, a:{NoOfAntic}]";
       lblReaded.Text = $"{NumberOfReaded} [{NumberOfReadedPercentage}%]";
+      lblWanted.Text = $"{NumberOfWantedBooks}";
       lblMyOldestBook.Text = $"{MyOldestBook.CzechName} [{MyOldestBook.MyPublicationDate}]";
       lblOldestBook.Text = $"{OldestBook.CzechName} [{OldestBook.OriginalPublicationDate}]";
       lblBestPublishers.Text = $"[{BestPublishers.Substring(0, BestPublishers.Length-2)}]";
     }
 
-    private void NoOfBooks()
+    private void NoOfWantedBooks()
     {
-      NumberOfBooks = Library.Count;
+      NumberOfWantedBooks = Library.Where(i => i.Groupe == Common.BookGroup.Chci).Count();
     }
 
-    private void NoOfReaded()
+    private void NoOfBooks(IEnumerable<Book> lib)
     {
-      NumberOfReaded = Library.Where(i => i.Readed).Count();
+      NumberOfBooks = lib.Count();
+    }
+
+    private void NoOfReaded(IEnumerable<Book> lib)
+    {
+      NumberOfReaded = lib.Where(i => i.Readed).Count();
       NumberOfReadedPercentage = Math.Round(Convert.ToDouble(NumberOfReaded) / ((double)NumberOfBooks / 100), 0);
     }
 
-    private void NoOfNewAntic()
+    private void NoOfNewAntic(IEnumerable<Book> lib)
     {
-      NoOfNew = Library.Where(i => i.BookType.Equals(Common.BookType.Nova.ToString())).Count();
-      NoOfAntic = Library.Where(i => i.BookType.Equals(Common.BookType.Antikvariat.ToString())).Count();
+      NoOfNew = lib.Where(i => i.BookType.Equals(Common.BookType.Nova.ToString())).Count();
+      NoOfAntic = lib.Where(i => i.BookType.Equals(Common.BookType.Antikvariat.ToString())).Count();
     }
 
-    private void FindOldestBook()
+    private void FindOldestBook(IEnumerable<Book> lib)
     {
-      MyOldestBook = Library.OrderBy((x) => (x.MyPublicationDate)).First();
-      OldestBook = Library.OrderBy((x) => (x.OriginalPublicationDate)).First();
+      MyOldestBook = lib.OrderBy((x) => (x.MyPublicationDate)).First();
+      OldestBook = lib.OrderBy((x) => (x.OriginalPublicationDate)).First();
     }
 
-    private void FindBestPublishers()
+    private void FindBestPublishers(IEnumerable<Book> lib)
     {
       BestPublishers = string.Empty;
-      var result = Library.GroupBy(x => x.Publish3r).
+      var result = lib.GroupBy(x => x.Publish3r).
         Select(i => new
         {
           Name = i.Key,

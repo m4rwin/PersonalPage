@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Xml;
-using System.Linq;
 using System.IO;
 using System.Xml.Linq;
 using BaseLibrary;
@@ -15,17 +12,7 @@ namespace martinhromek.library
     #region Properties
     public string DB { set; get; }
     public string DBPath { set; get; } = "~/library/storage.xml";
-    public List<Book> Library { private set; get; } = new List<Book>();
-    public string LibraryLastUpdate { private set; get; }
-    public int NumberOfBooks { get; private set; }
-    public int NumberOfReaded { get; private set; }
-    public double NumberOfReadedPercentage { get; private set; }
-    public int NoOfNew { get; private set; }
-    public int NoOfAntic { get; private set; }
-    public int NumberOfWantedBooks { get; set; }
-    public Book MyOldestBook { get; set; }
-    public Book OldestBook { get; set; }
-    public string BestPublishers { get; set; }
+    public Library MyLib { private set; get; }
     #endregion
 
     #region Events
@@ -63,18 +50,10 @@ namespace martinhromek.library
 
       Session["db"] = DBPath;
 
-      XmlDocument lDoc = new XmlDocument();
-      lDoc.Load(DB);
-      XmlNode lRoot = lDoc.DocumentElement;
+      MyLib = new Library(DB);
 
-      LibraryLastUpdate = lRoot.Attributes["last_update"].Value;
-      lblLastUpdate.Text = $"last update: {LibraryLastUpdate}";
-
-      foreach (XmlNode lNode in lRoot.ChildNodes)
-        if (lNode.Name.Equals("book"))
-          Library.Add(new Book(lNode));
-
-      Session["library"] = Library;
+      lblLastUpdate.Text = $"last update: {MyLib.LibraryLastUpdate}";
+      Session["library"] = MyLib.AllBooks;
     }
 
     private void CreateDB()
@@ -91,16 +70,10 @@ namespace martinhromek.library
       bool language = (Session["lang"] == null || Session["lang"].Equals("cz")) ? true : false;
 
       foreach (string group in Enum.GetNames(typeof(Common.BookGroup)))
-      {
-        this.MainPanel.Controls.Add(
-            new Panel() { ID = $"panel{group}", GroupingText = group });
-      }
+        this.MainPanel.Controls.Add(new Panel() { ID = $"panel{group}", GroupingText = group });
 
-      Library.Sort((x, y) => string.Compare(x.AuthorLastName, y.AuthorLastName));
-      foreach (var item in Library)
-      {
+      foreach (var item in MyLib.AllBooks)
         ShowBook(FindControl($"panel{item.Groupe}"), item, language);
-      }
     }
 
     private void ShowBook(System.Web.UI.Control panel, Book item, bool lang)
@@ -122,68 +95,12 @@ namespace martinhromek.library
 
     private void SetStatistics()
     {
-      // pro statistiky pouzit knihy, ktere vlastnim
-      IEnumerable<Book> lib = Library.Where(i => i.Groupe != Common.BookGroup.Chci);
-
-      NoOfBooks(lib);
-      NoOfReaded(lib);
-      NoOfWantedBooks();
-      NoOfNewAntic(lib);
-      FindOldestBook(lib);
-      FindBestPublishers(lib);
-
-      lblNoOfBooks.Text = $"{NumberOfBooks.ToString()} [n:{NoOfNew}, a:{NoOfAntic}]";
-      lblReaded.Text = $"{NumberOfReaded} [{NumberOfReadedPercentage}%]";
-      lblWanted.Text = $"{NumberOfWantedBooks}";
-      lblMyOldestBook.Text = $"{MyOldestBook.CzechName} [{MyOldestBook.MyPublicationDate}]";
-      lblOldestBook.Text = $"{OldestBook.CzechName} [{OldestBook.OriginalPublicationDate}]";
-      lblBestPublishers.Text = $"[{BestPublishers.Substring(0, BestPublishers.Length-2)}]";
-    }
-
-    private void NoOfWantedBooks()
-    {
-      NumberOfWantedBooks = Library.Where(i => i.Groupe == Common.BookGroup.Chci).Count();
-    }
-
-    private void NoOfBooks(IEnumerable<Book> lib)
-    {
-      NumberOfBooks = lib.Count();
-    }
-
-    private void NoOfReaded(IEnumerable<Book> lib)
-    {
-      NumberOfReaded = lib.Where(i => i.Readed).Count();
-      NumberOfReadedPercentage = Math.Round(Convert.ToDouble(NumberOfReaded) / ((double)NumberOfBooks / 100), 0);
-    }
-
-    private void NoOfNewAntic(IEnumerable<Book> lib)
-    {
-      NoOfNew = lib.Where(i => i.BookType.Equals(Common.BookType.Nova.ToString())).Count();
-      NoOfAntic = lib.Where(i => i.BookType.Equals(Common.BookType.Antikvariat.ToString())).Count();
-    }
-
-    private void FindOldestBook(IEnumerable<Book> lib)
-    {
-      MyOldestBook = lib.OrderBy((x) => (x.MyPublicationDate)).First();
-      OldestBook = lib.OrderBy((x) => (x.OriginalPublicationDate)).First();
-    }
-
-    private void FindBestPublishers(IEnumerable<Book> lib)
-    {
-      BestPublishers = string.Empty;
-      var result = lib.GroupBy(x => x.Publish3r).
-        Select(i => new
-        {
-          Name = i.Key,
-          Numero = i.ToList().Count
-        }).
-        OrderByDescending(y => y.Numero).Take(5);
-
-
-      foreach (var item in result)
-      {
-        BestPublishers += $"{item.Name}: {item.Numero}, ";
-      }
+      lblNoOfBooks.Text = $"{MyLib.NumberOfBooks.ToString()} [n:{MyLib.NumberOfNewBooks}, a:{MyLib.NumberOfAnticBooks}]";
+      lblReaded.Text = $"{MyLib.NumberOfReaded} [{MyLib.NumberOfReadedPercentage}%]";
+      lblWanted.Text = $"{MyLib.NumberOfWantedBooks}";
+      lblMyOldestBook.Text = $"{MyLib.MyOldestBook.CzechName} [{MyLib.MyOldestBook.MyPublicationDate}]";
+      lblOldestBook.Text = $"{MyLib.OldestBook.CzechName} [{MyLib.OldestBook.OriginalPublicationDate}]";
+      lblBestPublishers.Text = $"[{MyLib.BestPublishers.Substring(0, MyLib.BestPublishers.Length-2)}]";
     }
     #endregion
   }

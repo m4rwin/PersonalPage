@@ -14,7 +14,7 @@ a:link, a:visited, a:hover, a:active {
 /* STRUCTURE */
 #pagewrap {
 	padding: 5px;
-	width: 960px;
+	width: 1000px;
 	margin: 20px auto;
 }
 header {
@@ -26,11 +26,10 @@ header {
 }
 
 #content {
-	width: 290px;
+	width: 500px;
 	float: left;
 	padding: 5px 15px;
-    background-color : white;
-    font-size: small;
+    font-size: 0.7em;
 }
 
 #info {
@@ -42,10 +41,10 @@ header {
 }
 
 #middle {
-	width: 294px; /* Account for margins + border values */
+	width: 250px; /* Account for margins + border values */
 	float: left;
 	padding: 5px 15px;
-	margin: 0px 5px 5px 5px;1
+	margin: 0px 5px 5px 5px;
 }
 
 footer {

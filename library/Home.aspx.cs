@@ -83,9 +83,10 @@ namespace martinhromek.library
       string bookName = (lang) ? item.CzechName : item.OriginalName;
 
       panel.Controls.Add(new Label()
-      { /*ID = DateTime.Now.Millisecond.ToString(),*/
+      {
+        ID = Guid.NewGuid().ToString(),
         Text = $"{item.AuthorLastName}, {item.AuthorFirstName} {item.AuthorMiddleName} - {bookName}",
-        Width = 400,
+        Width = 500,
         BorderWidth = 0,
         ToolTip = tooltip,
         ForeColor = item.Readed ? System.Drawing.Color.LawnGreen : System.Drawing.Color.Black

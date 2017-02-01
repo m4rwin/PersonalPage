@@ -1,0 +1,32 @@
+﻿body
+{
+    background-color: black;
+    color: white;
+    padding: 0; /*vnitrni okraj*/
+    margin: 0; /*vnejsi okraj*/
+}
+
+header
+{
+    background-color: ;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section#main
+{
+    background-color: ;
+    font-size: small;
+    padding: 5px;
+}
+
+footer
+{
+    background-color: ;
+    font-size: x-small;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+}

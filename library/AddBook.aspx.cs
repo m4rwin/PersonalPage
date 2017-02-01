@@ -17,11 +17,18 @@ namespace martinhromek.library
     #region Events
     protected void Page_Load(object sender, EventArgs e)
     {
-      DBPath = Server.MapPath(Session["db"].ToString());
-      Lib = (List<Book>)Session["library"];
+      if (Session["db"] == null)
+      {
+        return;
+      }
+      else
+      {
+        DBPath = Server.MapPath(Session["db"].ToString());
+        Lib = (List<Book>)Session["library"];
 
-      if (!IsPostBack)
-        LoadData();
+        if (!IsPostBack)
+          LoadData();
+      }
     }
 
     protected void btnFind_Click(object sender, EventArgs e)
